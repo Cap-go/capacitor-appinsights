@@ -1,7 +1,7 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'ee.forgr.capacitor_appinsights.example_app',
+  appId: 'app.capgo.appinsights',
   appName: 'example-app',
   webDir: 'dist'
 };
