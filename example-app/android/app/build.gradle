@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    namespace "ee.forgr.capacitor_appinsights.example_app"
+    namespace "app.capgo.appinsights"
     compileSdk rootProject.ext.compileSdkVersion
     defaultConfig {
         applicationId "app.capgo.appinsights"

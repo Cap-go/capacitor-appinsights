@@ -16,6 +16,7 @@
   "dependencies": {
     "@capacitor/android": "^7.2.0",
     "@capacitor/core": "^7.2.0",
+    "@capacitor/ios": "^7.2.0",
     "@capgo/capacitor-android-usagestatsmanager": "^7.0.2",
     "capacitor-appinsights": "file:.."
   }

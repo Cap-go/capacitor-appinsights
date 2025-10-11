@@ -1,4 +1,4 @@
-package ee.forgr.capacitor_appinsights.example_app;
+package app.capgo.appinsights;
 
 import com.getcapacitor.BridgeActivity;
 
