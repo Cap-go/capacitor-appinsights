@@ -1,6 +1,6 @@
 export interface PanelSDKState {
-  initCompleted: boolean;      // SDK initialization status
-  jobScheduled: boolean;       // Background job scheduling status
+  initCompleted: boolean; // SDK initialization status
+  jobScheduled: boolean; // Background job scheduling status
   permissionAcquired: boolean; // Required permissions status
 }
 
@@ -10,8 +10,8 @@ export interface CapacitorAppInsightsPlugin {
    * @param options Configuration options for SDK initialization
    */
   init(options: {
-    partnerId: string;    // Provided by our business unit
-    partnerKey: string;   // Provided by our business unit
+    partnerId: string; // Provided by our business unit
+    partnerKey: string; // Provided by our business unit
   }): Promise<void>;
 
   /**
