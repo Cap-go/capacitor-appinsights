@@ -11,7 +11,9 @@ import com.appinsights.PanelSDKState
 
 @CapacitorPlugin(name = "CapacitorAppInsights")
 class CapacitorAppInsightsPlugin : Plugin() {
-    
+
+    private val PLUGIN_VERSION = "0.0.1"
+
     companion object {
         private const val TAG = "CapacitorAppInsights"
     }
@@ -89,6 +91,17 @@ class CapacitorAppInsightsPlugin : Plugin() {
         } catch (e: Exception) {
             Log.e(TAG, "Failed to get SDK state: ${e.message}", e)
             call.reject("Failed to get SDK state: ${e.message}", e)
+        }
+    }
+
+    @PluginMethod
+    fun getPluginVersion(call: PluginCall) {
+        try {
+            val ret = JSObject()
+            ret.put("version", PLUGIN_VERSION)
+            call.resolve(ret)
+        } catch (e: Exception) {
+            call.reject("Could not get plugin version", e)
         }
     }
 } 
