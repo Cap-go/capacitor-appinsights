@@ -21,6 +21,7 @@ npx cap sync
 * [`init(...)`](#init)
 * [`setUserId(...)`](#setuserid)
 * [`getState()`](#getstate)
+* [`getPluginVersion()`](#getpluginversion)
 * [Interfaces](#interfaces)
 
 </docgen-index>
@@ -31,14 +32,14 @@ npx cap sync
 ### init(...)
 
 ```typescript
-init(options: { partnerId: string; partnerKey: string; userId: string; deviceId: string; debugMode: boolean; }) => Promise<void>
+init(options: { partnerId: string; partnerKey: string; }) => Promise<void>
 ```
 
 Initialize the AppInsights SDK
 
-| Param         | Type                                                                                                          | Description                                  |
-| ------------- | ------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
-| **`options`** | <code>{ partnerId: string; partnerKey: string; userId: string; deviceId: string; debugMode: boolean; }</code> | Configuration options for SDK initialization |
+| Param         | Type                                                    | Description                                  |
+| ------------- | ------------------------------------------------------- | -------------------------------------------- |
+| **`options`** | <code>{ partnerId: string; partnerKey: string; }</code> | Configuration options for SDK initialization |
 
 --------------------
 
@@ -67,6 +68,19 @@ getState() => Promise<PanelSDKState>
 Get the current state of the SDK
 
 **Returns:** <code>Promise&lt;<a href="#panelsdkstate">PanelSDKState</a>&gt;</code>
+
+--------------------
+
+
+### getPluginVersion()
+
+```typescript
+getPluginVersion() => Promise<{ version: string; }>
+```
+
+Get the native Capacitor plugin version
+
+**Returns:** <code>Promise&lt;{ version: string; }&gt;</code>
 
 --------------------
 
