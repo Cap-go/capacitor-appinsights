@@ -3,7 +3,7 @@ import { WebPlugin } from '@capacitor/core';
 import type { CapacitorAppInsightsPlugin, PanelSDKState } from './definitions';
 
 export class CapacitorAppInsightsWeb extends WebPlugin implements CapacitorAppInsightsPlugin {
-  init(options: {
+  init(_options: {
     partnerId: string;
     partnerKey: string;
     userId: string;
@@ -12,7 +12,7 @@ export class CapacitorAppInsightsWeb extends WebPlugin implements CapacitorAppIn
   }): Promise<void> {
     throw new Error('Method not implemented.');
   }
-  setUserId(options: { userId: string }): Promise<void> {
+  setUserId(_options: { userId: string }): Promise<void> {
     throw new Error('Method not implemented.');
   }
   getState(): Promise<PanelSDKState> {
