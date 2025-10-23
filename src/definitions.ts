@@ -25,4 +25,12 @@ export interface CapacitorAppInsightsPlugin {
    * @returns Promise resolving to the current SDK state
    */
   getState(): Promise<PanelSDKState>;
+
+  /**
+   * Get the native Capacitor plugin version
+   *
+   * @returns {Promise<{ id: string }>} an Promise with version for this device
+   * @throws An error if the something went wrong
+   */
+  getPluginVersion(): Promise<{ version: string }>;
 }

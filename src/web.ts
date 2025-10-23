@@ -18,4 +18,8 @@ export class CapacitorAppInsightsWeb extends WebPlugin implements CapacitorAppIn
   getState(): Promise<PanelSDKState> {
     throw new Error('Method not implemented.');
   }
+
+  async getPluginVersion(): Promise<{ version: string }> {
+    return { version: 'web' };
+  }
 }
