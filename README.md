@@ -7,6 +7,10 @@
 </div>
 A wrapper around the https://github.com/apptopia/appinsights SDK
 
+## Documentation
+
+The most complete doc is available here: https://capgo.app/docs/plugins/appinsights/
+
 ## Install
 
 ```bash
