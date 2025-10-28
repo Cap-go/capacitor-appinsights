@@ -14,7 +14,6 @@ public class CapacitorAppInsightsPlugin: CAPPlugin, CAPBridgedPlugin {
         CAPPluginMethod(name: "echo", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "getPluginVersion", returnType: CAPPluginReturnPromise)
     ]
-    private let implementation = CapacitorAppInsights()
 
     @objc func echo(_ call: CAPPluginCall) {
         let value = call.getString("value") ?? ""
