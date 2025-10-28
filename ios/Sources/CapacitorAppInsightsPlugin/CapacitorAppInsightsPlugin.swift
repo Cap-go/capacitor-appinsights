@@ -11,11 +11,26 @@ public class CapacitorAppInsightsPlugin: CAPPlugin, CAPBridgedPlugin {
     public let identifier = "CapacitorAppInsightsPlugin"
     public let jsName = "CapacitorAppInsights"
     public let pluginMethods: [CAPPluginMethod] = [
+        CAPPluginMethod(name: "init", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "setUserId", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "getState", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "getPluginVersion", returnType: CAPPluginReturnPromise)
     ]
 
     @objc func getPluginVersion(_ call: CAPPluginCall) {
         call.resolve(["version": self.PLUGIN_VERSION])
+    }
+
+    @objc func `init`(_ call: CAPPluginCall) {
+        call.reject("AppInsights SDK is Android-only and not supported on iOS.")
+    }
+
+    @objc func setUserId(_ call: CAPPluginCall) {
+        call.reject("AppInsights SDK is Android-only and not supported on iOS.")
+    }
+
+    @objc func getState(_ call: CAPPluginCall) {
+        call.reject("AppInsights SDK is Android-only and not supported on iOS.")
     }
 
 }
