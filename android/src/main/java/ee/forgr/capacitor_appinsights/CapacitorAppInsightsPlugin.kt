@@ -12,7 +12,7 @@ import com.appinsights.PanelSDKState
 @CapacitorPlugin(name = "CapacitorAppInsights")
 class CapacitorAppInsightsPlugin : Plugin() {
 
-    private val PLUGIN_VERSION = "0.0.1"
+    private val pluginVersion = "0.0.1"
 
     companion object {
         private const val TAG = "CapacitorAppInsights"
@@ -98,7 +98,7 @@ class CapacitorAppInsightsPlugin : Plugin() {
     fun getPluginVersion(call: PluginCall) {
         try {
             val ret = JSObject()
-            ret.put("version", PLUGIN_VERSION)
+            ret.put("version", pluginVersion)
             call.resolve(ret)
         } catch (e: Exception) {
             call.reject("Could not get plugin version", e)
