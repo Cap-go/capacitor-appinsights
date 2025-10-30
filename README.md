@@ -9,7 +9,7 @@ A wrapper around the https://github.com/apptopia/appinsights SDK
 
 ## Why Capacitor AppInsights?
 
-The only **free** Capacitor plugin for integrating the AppInsights SDK (paid alternatives may exist):
+The only Capacitor plugin for integrating the AppInsights SDK:
 
 - **Market intelligence** - Access app store analytics and competitive data
 - **User insights** - Track and analyze user behavior across platforms
