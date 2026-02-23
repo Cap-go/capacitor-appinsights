@@ -8,7 +8,7 @@
         "@capacitor/android": "^8.0.0",
         "@capacitor/core": "^8.0.0",
         "@capacitor/ios": "^8.0.0",
-        "@capgo/capacitor-android-usagestatsmanager": "^7.0.2",
+        "@capgo/capacitor-android-usagestatsmanager": "^8.0.0",
         "capacitor-appinsights": "file:..",
       },
       "devDependencies": {
@@ -33,7 +33,7 @@
 
     "@capacitor/ios": ["@capacitor/ios@8.1.0", "", { "peerDependencies": { "@capacitor/core": "^8.1.0" } }, "sha512-wPaQ8ayL0UY+SxydZbrmfzPs8TryZVEB6hrL/XBnXxQtb6rpEmIy/3GIltPwM+/T4m/IuaSDZOToWK65ruC00g=="],
 
-    "@capgo/capacitor-android-usagestatsmanager": ["@capgo/capacitor-android-usagestatsmanager@7.2.11", "", { "peerDependencies": { "@capacitor/core": ">=7.0.0" } }, "sha512-0H22REaJkGM+gPTMhr3DA9mHJHNl55FIAR6vN6AfiwmztMvPd+HGaHj1S9qjuzSAoxWZibrcvbGVTXTzPrDmNQ=="],
+    "@capgo/capacitor-android-usagestatsmanager": ["@capgo/capacitor-android-usagestatsmanager@8.0.16", "", { "peerDependencies": { "@capacitor/core": ">=8.0.0" } }, "sha512-DNDAaEz8m41XLW9mNx3jeYFLSjwNy/geJ3FkscYsXEBgns1b5FBaZ6i/BVhCQN3/QsENjycGPu70lCRez7phUw=="],
 
     "@chevrotain/cst-dts-gen": ["@chevrotain/cst-dts-gen@11.0.3", "", { "dependencies": { "@chevrotain/gast": "11.0.3", "@chevrotain/types": "11.0.3", "lodash-es": "4.17.21" } }, "sha512-BvIKpRLeS/8UbfxXxgC33xOumsacaeCKAjAeLyOn7Pcp95HiRbrpl14S+9vaZLolnbssPIUuiUd8IvgkRyt6NQ=="],
 
