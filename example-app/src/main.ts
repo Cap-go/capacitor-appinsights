@@ -1,10 +1,10 @@
-import { CapacitorUpdater } from '@capgo/capacitor-updater';
 import './style.css'
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
-import { CapacitorAppInsights } from 'capacitor-appinsights'
+import { CapacitorAppInsights } from '@capgo/capacitor-appinsights'
+import { CapacitorUpdater } from '@capgo/capacitor-updater';
 import { Capacitor } from '@capacitor/core'
-import { partnerId, partnerKey } from './license'
+import { partnerId, partnerKey } from './demo-license'
 import { CapacitorUsageStatsManager } from '@capgo/capacitor-android-usagestatsmanager'
 
 // AppInsights configuration
