@@ -14,17 +14,20 @@ The demo app provides a comprehensive interface to test all SDK functionality:
 ## Setup
 
 1. Optional: provide Apptopia credentials through environment variables:
+
 ```bash
 VITE_APPINSIGHTS_PARTNER_ID=your_partner_id_here
 VITE_APPINSIGHTS_PARTNER_KEY=your_partner_key_here
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Build the plugin:
+
 ```bash
 cd ..
 npm run build
@@ -32,6 +35,7 @@ cd example-app
 ```
 
 4. For Android testing:
+
 ```bash
 npx cap add android
 npx cap sync android
@@ -59,11 +63,13 @@ The app uses the following demo configuration:
 ## Development
 
 Run the development server:
+
 ```bash
 npm run dev
 ```
 
 Build for production:
+
 ```bash
 npm run build
 ```

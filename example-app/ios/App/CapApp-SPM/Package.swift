@@ -11,9 +11,10 @@ let package = Package(
             targets: ["CapApp-SPM"])
     ],
     dependencies: [
-        .package(url: "https://github.com/ionic-team/capacitor-swift-pm.git", from: "8.0.0"),
-        .package(name: "CapgoCapacitorAndroidUsagestatsmanager", path: "../../../node_modules/.bun/@capgo+capacitor-android-usagestatsmanager@7.2.0+15e98482558ccfe6/node_modules/@capgo/capacitor-android-usagestatsmanager"),
-        .package(name: "CapacitorAppinsights", path: "../../../node_modules/.bun/@capgo+capacitor-appinsights@file+../node_modules/@capgo/capacitor-appinsights")
+        .package(url: "https://github.com/ionic-team/capacitor-swift-pm.git", exact: "8.3.3"),
+        .package(name: "CapgoCapacitorAndroidUsagestatsmanager", path: "../../../node_modules/.bun/@capgo+capacitor-android-usagestatsmanager@8.0.26+73a76fe9b2b73c4e/node_modules/@capgo/capacitor-android-usagestatsmanager"),
+        .package(name: "CapgoCapacitorAppinsights", path: "../../../node_modules/.bun/@capgo+capacitor-appinsights@file+../node_modules/@capgo/capacitor-appinsights"),
+        .package(name: "CapgoCapacitorUpdater", path: "../../../node_modules/.bun/@capgo+capacitor-updater@8.47.10+73a76fe9b2b73c4e/node_modules/@capgo/capacitor-updater")
     ],
     targets: [
         .target(
@@ -22,7 +23,8 @@ let package = Package(
                 .product(name: "Capacitor", package: "capacitor-swift-pm"),
                 .product(name: "Cordova", package: "capacitor-swift-pm"),
                 .product(name: "CapgoCapacitorAndroidUsagestatsmanager", package: "CapgoCapacitorAndroidUsagestatsmanager"),
-                .product(name: "CapacitorAppinsights", package: "CapacitorAppinsights")
+                .product(name: "CapgoCapacitorAppinsights", package: "CapgoCapacitorAppinsights"),
+                .product(name: "CapgoCapacitorUpdater", package: "CapgoCapacitorUpdater")
             ]
         )
     ]

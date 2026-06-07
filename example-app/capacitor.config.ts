@@ -6,6 +6,9 @@ const config: CapacitorConfig = {
   appName: 'App Insights Example',
   webDir: 'dist',
   plugins: {
+    SplashScreen: {
+      launchAutoHide: false,
+    },
     CapacitorUpdater: {
       appId: 'app.capgo.appinsights',
       autoUpdate: true,
