@@ -13,18 +13,21 @@ The demo app provides a comprehensive interface to test all SDK functionality:
 
 ## Setup
 
-1. Create a `src/license.ts` file with your Apptopia credentials:
-```typescript
-export const partnerId = 'your_partner_id_here';
-export const partnerKey = 'your_partner_key_here';
+1. Optional: provide Apptopia credentials through environment variables:
+
+```bash
+VITE_APPINSIGHTS_PARTNER_ID=your_partner_id_here
+VITE_APPINSIGHTS_PARTNER_KEY=your_partner_key_here
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Build the plugin:
+
 ```bash
 cd ..
 npm run build
@@ -32,6 +35,7 @@ cd example-app
 ```
 
 4. For Android testing:
+
 ```bash
 npx cap add android
 npx cap sync android
@@ -50,8 +54,8 @@ The demo app provides an interactive interface with the following buttons:
 ## Configuration
 
 The app uses the following demo configuration:
-- **Partner ID**: From your license file
-- **Partner Key**: From your license file  
+- **Partner ID**: `VITE_APPINSIGHTS_PARTNER_ID` or `demo-partner-id`
+- **Partner Key**: `VITE_APPINSIGHTS_PARTNER_KEY` or `demo-partner-key`
 - **User ID**: `user_capacitor_demo_app`
 - **Device ID**: `device_capacitor_demo_app_12987798`
 - **Debug Mode**: `true` (enables verbose logging)
@@ -59,11 +63,13 @@ The app uses the following demo configuration:
 ## Development
 
 Run the development server:
+
 ```bash
 npm run dev
 ```
 
 Build for production:
+
 ```bash
 npm run build
 ```

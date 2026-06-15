@@ -1,9 +1,10 @@
 import './style.css'
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
-import { CapacitorAppInsights } from 'capacitor-appinsights'
+import { CapacitorAppInsights } from '@capgo/capacitor-appinsights'
+import { CapacitorUpdater } from '@capgo/capacitor-updater';
 import { Capacitor } from '@capacitor/core'
-import { partnerId, partnerKey } from './license'
+import { partnerId, partnerKey } from './demo-license'
 import { CapacitorUsageStatsManager } from '@capgo/capacitor-android-usagestatsmanager'
 
 // AppInsights configuration
@@ -151,3 +152,9 @@ document.getElementById('get-state-btn')!.addEventListener('click', async () => 
 // Initial log
 addLog('AppInsights SDK Demo loaded successfully!')
 addLog(`Platform: ${Capacitor.getPlatform()}, Native: ${Capacitor.isNativePlatform()}`)
+
+if (Capacitor.isNativePlatform()) {
+  CapacitorUpdater.notifyAppReady().catch((error) => {
+    console.error('Capgo notifyAppReady failed', error);
+  });
+}
