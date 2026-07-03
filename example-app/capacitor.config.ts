@@ -3,7 +3,7 @@ import pkg from './package.json';
 
 const config: CapacitorConfig = {
   appId: 'app.capgo.appinsights',
-  appName: 'App Insights Example',
+  appName: '@capgo/capacitor-appinsights',
   webDir: 'dist',
   plugins: {
     SplashScreen: {
