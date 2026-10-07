@@ -20,8 +20,8 @@ Integrate the Apptopia AppInsights SDK in your Capacitor app with a small TypeSc
 - **Initialize**: `init()` starts the AppInsights SDK with your partner ID.
 - **User ID**: `setUserId()` sets or updates the user ID after initialization.
 - **State**: `getState()` returns the current SDK state.
-- **Official SDK**: wraps the `com.appinsights:appinsights` Android library.
-- **Platforms**: Android. Android only: the AppInsights SDK is Android only, so iOS and web reject.
+- **Official SDK**: wraps the `com.appinsights:appinsights` Android library. `getPluginVersion()` also works on iOS and web.
+- **Platforms**: Android. The AppInsights SDK methods (`init()`, `setUserId()` and `getState()`) are Android only and reject on iOS and web.
 
 ## Why Capacitor AppInsights?
 
