@@ -1,11 +1,27 @@
 # @capgo/capacitor-appinsights
-<a href="https://capgo.app/"><img src="https://capgo.app/readme-banner.svg?repo=Cap-go/capacitor-appinsights" alt="Capgo - Instant updates for Capacitor" /></a>
+
+Integrate the Apptopia AppInsights SDK in your Capacitor app with a small TypeScript API. Initialize the panel SDK, set a user ID and read its state.
+
+<a href="https://capgo.app/?ref=plugin_appinsights"><img src="https://capgo.app/readme-banner.svg?repo=Cap-go/capacitor-appinsights" alt="Capgo - Instant updates for Capacitor" /></a>
 
 <div align="center">
-  <h2><a href="https://capgo.app/?ref=plugin_appinsights"> ➡️ Get Instant updates for your App with Capgo</a></h2>
-  <h2><a href="https://capgo.app/consulting/?ref=plugin_appinsights"> Missing a feature? We’ll build the plugin for you 💪</a></h2>
+  <p><b>Capgo</b>: open-source live updates for Ionic and Capacitor apps. Ship OTA fixes and features instantly, without waiting for app store review.</p>
+  <h2><a href="https://capgo.app/register/?ref=plugin_appinsights">➡️ Get started for free</a></h2>
+  <p>14-day unlimited free trial. No credit card required</p>
+  <p><a href="https://capgo.app/consulting/?ref=plugin_appinsights">Missing a feature? We'll build the plugin for you 💪</a></p>
 </div>
-A wrapper around the https://github.com/apptopia/appinsights SDK
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Cap-go/capacitor-appinsights/main/assets/github-social-preview.png" alt="@capgo/capacitor-appinsights for Capacitor apps" width="300" />
+</p>
+
+## Key features
+
+- **Initialize**: `init()` starts the AppInsights SDK with your partner ID.
+- **User ID**: `setUserId()` sets or updates the user ID after initialization.
+- **State**: `getState()` returns the current SDK state.
+- **Official SDK**: wraps the `com.appinsights:appinsights` Android library.
+- **Platforms**: Android. Android only: the AppInsights SDK is Android only, so iOS and web reject.
 
 ## Why Capacitor AppInsights?
 
