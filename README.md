@@ -88,14 +88,14 @@ npx cap sync
 ### init(...)
 
 ```typescript
-init(options: { partnerId: string; partnerKey: string; }) => Promise<void>
+init(options: { partnerId: string; partnerKey: string; consent?: boolean; }) => Promise<void>
 ```
 
 Initialize the AppInsights SDK
 
-| Param         | Type                                                    | Description                                  |
-| ------------- | ------------------------------------------------------- | -------------------------------------------- |
-| **`options`** | <code>{ partnerId: string; partnerKey: string; }</code> | Configuration options for SDK initialization |
+| Param         | Type                                                                       | Description                                  |
+| ------------- | -------------------------------------------------------------------------- | -------------------------------------------- |
+| **`options`** | <code>{ partnerId: string; partnerKey: string; consent?: boolean; }</code> | Configuration options for SDK initialization |
 
 --------------------
 
