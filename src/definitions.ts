@@ -12,6 +12,12 @@ export interface CapacitorAppInsightsPlugin {
   init(options: {
     partnerId: string; // Provided by our business unit
     partnerKey: string; // Provided by our business unit
+    /**
+     * User consent for data collection. Required by the native AppInsights SDK.
+     *
+     * @default false
+     */
+    consent?: boolean;
   }): Promise<void>;
 
   /**
