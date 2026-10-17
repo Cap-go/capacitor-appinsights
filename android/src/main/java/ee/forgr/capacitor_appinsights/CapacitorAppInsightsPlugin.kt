@@ -34,6 +34,8 @@ class CapacitorAppInsightsPlugin : Plugin() {
                 return
             }
 
+            val consent = call.getBoolean("consent", false) ?: false
+
             Log.d(TAG, "Initializing PanelSDK with partnerId: $partnerId")
             
             // Initialize the PanelSDK according to the documentation
@@ -41,6 +43,7 @@ class CapacitorAppInsightsPlugin : Plugin() {
                 context,
                 partnerId,
                 partnerKey,
+                consent,
             )
 
             Log.d(TAG, "PanelSDK initialized successfully")
@@ -62,9 +65,11 @@ class CapacitorAppInsightsPlugin : Plugin() {
                 return
             }
 
-            Log.d(TAG, "Setting user ID: $userId")
-            PanelSDK.setUserId(userId)
-            
+            Log.w(
+                TAG,
+                "setUserId is not supported by AppInsights SDK 1.0.10+; call ignored (userId=$userId)",
+            )
+
             call.resolve()
         } catch (e: Exception) {
             Log.e(TAG, "Failed to set user ID: ${e.message}", e)
