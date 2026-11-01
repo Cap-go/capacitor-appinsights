@@ -15,7 +15,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:8.13.0'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:2.4.20"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:2.4.21"
     }
 }
 
@@ -68,11 +68,11 @@ dependencies {
     implementation "androidx.appcompat:appcompat:$androidxAppCompatVersion"
     
     // Kotlin dependencies
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:2.4.20"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:2.4.21"
     
     // AppInsights SDK dependencies
     implementation 'com.appinsights:appinsights:1.0.1'
-    implementation 'androidx.work:work-runtime-ktx:2.11.2'
+    implementation 'androidx.work:work-runtime-ktx:2.12.0'
     implementation 'androidx.core:core-ktx:1.18.0'
     
     testImplementation "junit:junit:$junitVersion"
